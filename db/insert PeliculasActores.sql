@@ -1,0 +1,44 @@
+DELETE FROM `peliculasappdb`.`Peliculas_has_Actores`;
+DELETE FROM `peliculasappdb`.`Peliculas`;
+DELETE FROM `peliculasappdb`.`Actores`;
+
+ALTER TABLE `peliculasappdb`.`Peliculas` AUTO_INCREMENT = 1 ;
+INSERT INTO `peliculasappdb`.`Peliculas` VALUES (1,'La guerra de las galaxias. Episodio IV: Una nueva esperanza', 1977, 121, 'US', 'George Lucas', 'Ciencia Ficcion', 'La princesa Leia, líder del movimiento rebelde que desea reinstaurar la República en la galaxia en los tiempos ominosos del Imperio, es capturada por las Fuerzas Imperiales, capitaneadas por el implacable Darth Vader, el sirviente más fiel del Emperador. El intrépido y joven Luke Skywalker, ayudado por Han Solo, capitán de la nave espacial "El Halcón Milenario", y los androides, R2D2 y C3PO, serán los encargados de luchar contra el enemigo e intentar rescatar a la princesa para volver a instaurar la justicia en el seno de la galaxia.', 'https://m.media-amazon.com/images/M/MV5BOTA5NjhiOTAtZWM0ZC00MWNhLThiMzEtZDFkOTk2OTU1ZDJkXkEyXkFqcGdeQXVyMTA4NDI1NTQx._V1_SX300.jpg');
+INSERT INTO `peliculasappdb`.`Peliculas` VALUES (2,'La guerra de las galaxias. Episodio V: El imperio contraataca', 1980, 124, 'US','Irvin Kershner', 'Ciencia Ficcion', 'Tras un ataque sorpresa de las tropas imperiales a las bases camufladas de la alianza rebelde, Luke Skywalker, en compañía de R2D2, parte hacia el planeta Dagobah en busca de Yoda, el último maestro Jedi, para que le enseñe los secretos de la Fuerza. Mientras, Han Solo, la princesa Leia, Chewbacca, y C3PO esquivan a las fuerzas imperiales y piden refugio al antiguo propietario del Halcón Milenario, Lando Calrissian, en la ciudad minera de Bespin, donde les prepara una trampa urdida por Darth Vader.', 'https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg');
+INSERT INTO `peliculasappdb`.`Peliculas` VALUES (3,'La guerra de las galaxias. Episodio VI: El retorno del Jedi', 1983, 133, 'US', 'Richard Marquand', 'Ciencia Ficcion', 'Para ir a Tatooine y liberar a Han Solo, Luke Skywalker y la princesa Leia deben infiltrarse en la peligrosa guarida de Jabba the Hutt, el gángster más temido de la galaxia. Una vez reunidos, el equipo recluta a tribus de Ewoks para combatir a las fuerzas imperiales en los bosques de la luna de Endor. Mientras tanto, el Emperador y Darth Vader conspiran para atraer a Luke al lado oscuro, pero el joven está decidido a reavivar el espíritu del Jedi en su padre. La guerra civil galáctica termina con un último enfrentamiento entre las fuerzas rebeldes unificadas y una segunda Estrella de la Muerte, indefensa e incompleta, en una batalla que decidirá el destino de la galaxia.', 'https://m.media-amazon.com/images/M/MV5BOWZlMjFiYzgtMTUzNC00Y2IzLTk1NTMtZmNhMTczNTk0ODk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg');
+INSERT INTO `peliculasappdb`.`Peliculas` VALUES (4,'Star Wars: El despertar de la Fuerza', 2015, 135, 'US', 'J.J. Abrams', 'Ciencia Ficcion', 'Treinta años después de la victoria de la Alianza Rebelde sobre la segunda Estrella de la Muerte (hechos narrados en el Episodio VI: El retorno del Jedi), la galaxia está todavía en guerra. Una nueva República se ha constituido, pero una siniestra organización, la Primera Orden, ha resurgido de las cenizas del Imperio Galáctico. A los héroes de antaño, que luchan ahora en la Resistencia, se suman nuevos héroes: Poe Dameron, un piloto de caza, Finn, un soldado desertor de la Primera Orden, Rey, una joven chatarrera, y BB-8, un androide rodante. Todos ellos luchan contra las fuerzas del Mal: el Capitán Phasma, de la Primera Orden, y Kylo Ren, un temible y misterioso personaje que empuña un sable de luz roja.', 'https://m.media-amazon.com/images/M/MV5BOTAzODEzNDAzMl5BMl5BanBnXkFtZTgwMDU1MTgzNzE@._V1_SX300.jpg');
+INSERT INTO `peliculasappdb`.`Peliculas` VALUES (5,'Star Wars: Los últimos Jedi', 2017, 150, 'US', 'Rian Johnson', 'Ciencia Ficcion', 'La malvada Primera Orden se ha vuelto más poderosa y tiene contra las cuerdas a la Resistencia, liderada por la General Leia Organa (Carrie Fisher). El piloto Poe Dameron (Oscar Isaac) encabeza una misión para intentar destruir un acorazado de la Primera Orden. Mientras tanto, la joven Rey (Daisy Ridley) tendrá que definir su futuro y su vocación, y el viejo jedi Luke Skywalker (Mark Hamill) revaluar el significado de su vida.', 'https://m.media-amazon.com/images/M/MV5BMjQ1MzcxNjg4N15BMl5BanBnXkFtZTgwNzgwMjY4MzI@._V1_SX300.jpg');
+INSERT INTO `peliculasappdb`.`Peliculas` VALUES (6,'Star Wars: El ascenso de Skywalker', 2019, 141, 'US', 'J.J. Abrams', 'Ciencia Ficcion', 'Un año después de los eventos de "Los últimos Jedi", los restos de la Resistencia se enfrentarán una vez más a la Primera Orden, involucrando conflictos del pasado y del presente. Mientras tanto, el antiguo conflicto entre los Jedi y los Sith llegará a su clímax, lo que llevará a la saga de los Skywalker a un final definitivo. Final de la trilogía iniciada con "El despertar de la Fuerza". ', 'https://m.media-amazon.com/images/M/MV5BMDljNTQ5ODItZmQwMy00M2ExLTljOTQtZTVjNGE2NTg0NGIxXkEyXkFqcGdeQXVyODkzNTgxMDg@._V1_SX300.jpg');
+
+ALTER TABLE `peliculasappdb`.`Actores` AUTO_INCREMENT = 1 ;
+INSERT INTO `peliculasappdb`.`Actores` VALUES (1, 'Mark Hamill', '1951-09-24', 'US');
+INSERT INTO `peliculasappdb`.`Actores` VALUES (2, 'Harrison Ford', '1942-07-13', 'US');
+INSERT INTO `peliculasappdb`.`Actores` VALUES (3, 'Carrie Fisher', '1956-10-21', 'US');
+INSERT INTO `peliculasappdb`.`Actores` VALUES (4, 'Daisy Ridley', '1992-04-10', 'UK');
+INSERT INTO `peliculasappdb`.`Actores` VALUES (5, 'John Boyega', '1992-03-17', 'UK');
+INSERT INTO `peliculasappdb`.`Actores` VALUES (6, 'Adam Driver', '1983-11-19', 'US');
+
+INSERT INTO `peliculasappdb`.`Peliculas_has_Actores` VALUES (1, 1);
+INSERT INTO `peliculasappdb`.`Peliculas_has_Actores` VALUES (1, 2);
+INSERT INTO `peliculasappdb`.`Peliculas_has_Actores` VALUES (1, 3);
+INSERT INTO `peliculasappdb`.`Peliculas_has_Actores` VALUES (2, 1);
+INSERT INTO `peliculasappdb`.`Peliculas_has_Actores` VALUES (2, 2);
+INSERT INTO `peliculasappdb`.`Peliculas_has_Actores` VALUES (2, 3);
+INSERT INTO `peliculasappdb`.`Peliculas_has_Actores` VALUES (3, 1);
+INSERT INTO `peliculasappdb`.`Peliculas_has_Actores` VALUES (3, 2);
+INSERT INTO `peliculasappdb`.`Peliculas_has_Actores` VALUES (3, 3);
+INSERT INTO `peliculasappdb`.`Peliculas_has_Actores` VALUES (4, 1);
+INSERT INTO `peliculasappdb`.`Peliculas_has_Actores` VALUES (4, 2);
+INSERT INTO `peliculasappdb`.`Peliculas_has_Actores` VALUES (4, 3);
+INSERT INTO `peliculasappdb`.`Peliculas_has_Actores` VALUES (4, 4);
+INSERT INTO `peliculasappdb`.`Peliculas_has_Actores` VALUES (4, 5);
+INSERT INTO `peliculasappdb`.`Peliculas_has_Actores` VALUES (4, 6);
+INSERT INTO `peliculasappdb`.`Peliculas_has_Actores` VALUES (5, 1);
+INSERT INTO `peliculasappdb`.`Peliculas_has_Actores` VALUES (5, 3);
+INSERT INTO `peliculasappdb`.`Peliculas_has_Actores` VALUES (5, 4);
+INSERT INTO `peliculasappdb`.`Peliculas_has_Actores` VALUES (5, 5);
+INSERT INTO `peliculasappdb`.`Peliculas_has_Actores` VALUES (5, 6);
+INSERT INTO `peliculasappdb`.`Peliculas_has_Actores` VALUES (6, 3);
+INSERT INTO `peliculasappdb`.`Peliculas_has_Actores` VALUES (6, 4);
+INSERT INTO `peliculasappdb`.`Peliculas_has_Actores` VALUES (6, 5);
+INSERT INTO `peliculasappdb`.`Peliculas_has_Actores` VALUES (6, 6);
