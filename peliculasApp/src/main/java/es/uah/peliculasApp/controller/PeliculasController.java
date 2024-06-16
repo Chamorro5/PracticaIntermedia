@@ -33,9 +33,9 @@ public class PeliculasController {
         return peliculasService.buscarPeliculasPorGenero(genero);
     }
 
-    @GetMapping("/peliculas/director/{director}")
-    public List<Pelicula> buscarPeliculasPorDireccion(@PathVariable("director") String director) {
-        return peliculasService.buscarPeliculasPorDireccion(director);
+    @GetMapping("/peliculas/direccion/{direccion}")
+    public List<Pelicula> buscarPeliculasPorDireccion(@PathVariable("direccion") String direccion) {
+        return peliculasService.buscarPeliculasPorDireccion(direccion);
     }
 
     @PostMapping("/peliculas")
