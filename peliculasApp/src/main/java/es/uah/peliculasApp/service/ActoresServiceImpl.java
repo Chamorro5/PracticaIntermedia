@@ -47,4 +47,8 @@ public class ActoresServiceImpl implements IActoresService{
     public void anyadirActorAPelicula(Integer idActor, Integer idPelicula) {
         actoresDAO.anyadirActorAPelicula(idActor, idPelicula);
     }
+    @Override
+    public void eliminarActorDePelicula(Integer idActor, Integer idPelicula) {
+        actoresDAO.eliminarActorDePelicula(idActor, idPelicula);
+    }
 }

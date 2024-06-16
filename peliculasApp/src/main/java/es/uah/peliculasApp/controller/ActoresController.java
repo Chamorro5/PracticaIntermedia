@@ -47,4 +47,9 @@ public class ActoresController {
     public void anyadirActorAPelicula(@PathVariable("ida") Integer ida, @PathVariable("idp") Integer idp) {
         actoresService.anyadirActorAPelicula(ida, idp);
     }
+
+    @GetMapping("/actores/elim/{ida}/{idp}")
+    public void eliminarActorDePelicula(@PathVariable("ida") Integer ida, @PathVariable("idp") Integer idp) {
+        actoresService.anyadirActorAPelicula(ida, idp);
+    }
 }

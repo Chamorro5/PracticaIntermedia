@@ -78,4 +78,17 @@ public class ActorDAOImpl implements IActoresDAO{
             }
         }
     }
+
+    @Override
+    public void eliminarActorDePelicula(Integer idActor, Integer idPelicula) {
+        Optional<Actor> optionalAlumno = actoresJPA.findById(idActor);
+        if (optionalAlumno.isPresent()) {
+            Actor actor = optionalAlumno.get();
+            Optional<Pelicula> optionalPelicula = peliculasJPA.findById(idPelicula);
+            if (optionalPelicula.isPresent()) {
+                actor.removePelicula(optionalPelicula.get());
+                actoresJPA.save(actor);
+            }
+        }
+    }
 }

@@ -43,7 +43,7 @@ public class Actor {
         }
     }
 
-    public void removeCurso(Pelicula pelicula) {
+    public void removePelicula(Pelicula pelicula) {
         if (pelicula != null) {
             pelicula.removeActor(this);
             getPeliculas().remove(pelicula);

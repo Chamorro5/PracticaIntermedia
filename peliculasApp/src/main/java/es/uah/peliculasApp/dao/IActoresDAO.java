@@ -12,4 +12,5 @@ public interface IActoresDAO {
     void eliminarActor(Integer idActor);
     void actualizarActor(Actor actor);
     void anyadirActorAPelicula(Integer idActor, Integer idPelicula);
+    void eliminarActorDePelicula(Integer idActor, Integer idPelicula);
 }
