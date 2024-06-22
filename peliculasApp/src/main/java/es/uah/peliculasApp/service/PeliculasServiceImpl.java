@@ -39,7 +39,7 @@ public class PeliculasServiceImpl implements  IPeliculasService{
 
     @Override
     public void guardarPelicula(Pelicula pelicula) {
-        if (peliculasDAO.buscarPeliculaPorId(pelicula.getId())==null) {
+        if (peliculasDAO.buscarPeliculaPorId(pelicula.getIdPelicula())==null) {
             peliculasDAO.guardarPelicula(pelicula);
         }
     }
@@ -53,7 +53,7 @@ public class PeliculasServiceImpl implements  IPeliculasService{
 
     @Override
     public void actualizarPelicula(Pelicula pelicula) {
-        if (peliculasDAO.buscarPeliculaPorId(pelicula.getId())!=null) {
+        if (peliculasDAO.buscarPeliculaPorId(pelicula.getIdPelicula())!=null) {
             peliculasDAO.actualizarPelicula(pelicula);
         }
     }

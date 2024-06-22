@@ -18,7 +18,7 @@ public class Actor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idActor", nullable = false)
-    private Integer id;
+    private Integer idActor;
 
     @Column(name = "nombre", nullable = false, length = 45)
     private String nombre;
@@ -54,13 +54,13 @@ public class Actor {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Actor alumno = (Actor) o;
-        return Objects.equals(id, alumno.id) && Objects.equals(nombre, alumno.nombre) && Objects.equals(fcNacimiento, alumno.fcNacimiento);
+        Actor actor = (Actor) o;
+        return Objects.equals(idActor, actor.idActor) && Objects.equals(nombre, actor.nombre) && Objects.equals(fcNacimiento, actor.fcNacimiento);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id);
+        return Objects.hash(idActor);
     }
 
 }
