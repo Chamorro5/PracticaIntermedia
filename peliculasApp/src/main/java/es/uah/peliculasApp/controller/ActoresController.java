@@ -1,7 +1,7 @@
 package es.uah.peliculasApp.controller;
 
-import es.uah.peliculasApp.model.Actor;
-import es.uah.peliculasApp.service.IActoresService;
+import es.uah.peliculasApp.model.*;
+import es.uah.peliculasApp.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -43,13 +43,13 @@ public class ActoresController {
         actoresService.eliminarActor(id);
     }
 
-    @GetMapping("/actores/insc/{ida}/{idp}")
+    @PostMapping("/actores/{ida}/pelicula/{idp}")
     public void anyadirActorAPelicula(@PathVariable("ida") Integer ida, @PathVariable("idp") Integer idp) {
         actoresService.anyadirActorAPelicula(ida, idp);
     }
 
-    @GetMapping("/actores/elim/{ida}/{idp}")
+    @DeleteMapping("/actores/{ida}/pelicula/{idp}")
     public void eliminarActorDePelicula(@PathVariable("ida") Integer ida, @PathVariable("idp") Integer idp) {
-        actoresService.anyadirActorAPelicula(ida, idp);
+        actoresService.eliminarActorDePelicula(ida, idp);
     }
 }
