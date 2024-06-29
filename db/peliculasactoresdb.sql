@@ -37,7 +37,7 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `peliculasappdb`.`Alumnos`
+-- Table `peliculasappdb`.`Actores`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `peliculasappdb`.`Actores` ;
 
@@ -51,7 +51,7 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `cursosalumnosdb`.`Cursos_has_Alumnos`
+-- Table `cursosalumnosdb`.`Peliculas_has_Actores`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `peliculasappdb`.`Peliculas_has_Actores` ;
 
